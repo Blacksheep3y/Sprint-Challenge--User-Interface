@@ -242,6 +242,15 @@ footer nav a {
 
 /* MY CODE STARTS HERE */
 
+body {
+    font-weight: 600;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -254,64 +263,101 @@ footer nav a {
     color: black;
 }
 
-.undernav-img {
+.undernav-img-about {
     margin: 2%;
 }
 
-body {
-    font-weight: 700;
+.container about-page {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.middle-content .boxes .box:nth-of-type(1) {
-    background-color: teal;
+.top-text {
+    padding: 0 2%;
+    margin: 2%;
 }
 
-.middle-content .boxes .box:nth-of-type(2) {
-    background-color: gold;
+
+/* .mid-text {
+    padding: 0 2%;
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+hr {
+    border-top: 1px dashed black;
 }
 
-.middle-content .boxes .box:nth-of-type(3) {
-    background-color: cadetblue;
+.about-mid {
+    display: flex;
 }
 
-.middle-content .boxes .box:nth-of-type(4) {
-    background-color: coral;
+.mid-text {
+    display: flex;
+    flex-direction: column;
+    margin: 1% 2% 1% 2%;
 }
 
-.middle-content .boxes .box:nth-of-type(5) {
-    background-color: crimson;
+.mid-text img {
+    width: 100%;
+    margin: 2%;
 }
 
-.middle-content .boxes .box:nth-of-type(6) {
-    background-color: forestgreen;
+.mid-text-imgs {
+    display: flex;
+    justify-content: center;
 }
 
-.middle-content .boxes .box:nth-of-type(7) {
-    background-color: darkorchid;
+.underline {
+    padding-bottom: 5%;
+    border-bottom: 1px dashed black;
+    width: 95%;
+    margin-bottom: 8%;
 }
 
-.middle-content .boxes .box:nth-of-type(8) {
-    background-color: hotpink;
+.mid-text a {
+    font-size: 16px;
+    font-weight: 600;
+    background-color: white;
+    border-radius: 10px;
+    border: #333 2px solid;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 10px;
+    width: 30%;
+    text-align: center;
+    margin: 5% 0 0 0;
 }
 
-.middle-content .boxes .box:nth-of-type(9) {
-    background-color: indigo;
+.footsie {
+    padding: -2%;
+    margin: -1%;
+    margin-bottom: 2%;
 }
 
-.middle-content .boxes .box:nth-of-type(10) {
-    background-color: dodgerblue;
-}
-
-.middle-content .boxes .box {
+nav img {
+    background: #FFFACD;
     position: relative;
-    animation: mymove 5s infinite;
+    -webkit-animation: mymovez 3s;
 }
 
-@keyframes mymove {
+@-webkit-keyframes mymovez {
     from {
-        left: 1%;
+        top: 0px;
     }
     to {
-        left: 99%;
+        top: 200px;
+        background-color: #3CB371;
+    }
+}
+
+@keyframes mymovez {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 200px;
+        background-color: #20B2AA;
     }
 }
